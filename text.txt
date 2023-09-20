@@ -1,0 +1,171 @@
+After school, Kamal took the girls to the old house. It was very old and very dirty too. There was rubbish everywhere. The windows were broken and the walls were damp. It was scary. Amy didn’t like it. There were paintings of zombies and skeletons on the walls.
+
+“We’re going to take photos for the school art competition,” said Kamal. Amy didn’t like it but she didn’t say anything. “Where’s Grant?” asked Tara. “Er, he’s buying more paint.” Kamal looked away quickly. Tara thought he looked suspicious. “It’s getting dark, can we go now?” said Amy. She didn’t like zombies.
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #b8b9bd;
+}
+.vimeo--logo {
+  width: 17rem;
+  height: 9rem;
+  margin: 0 3.6rem;
+}
+.main-nav--links {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+}
+.main-nav--links li:last-child {
+  margin-left: -4rem;
+  margin-top: 0.4rem;
+}
+
+.main-nav--link:visited,
+.main-nav--link:link {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #36393c;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.main-nav--link:active,
+.main-nav--link:hover {
+  color: #000;
+}
+.main-nav-link:visited::before,
+.main-nav--link:link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  transition: width 0.7s ease-in-out;
+  /* transform-origin: right; */
+  /* transform: scaleX(0); */
+  /* does not matter but you can use this attributes */
+}
+.main-nav--link:active::before,
+.main-nav--link:hover::before {
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
+  /* transform: scaleX(2); */
+}
+
+.caret-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.social-links {
+  list-style: none;
+  margin-left: 3.6rem;
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  gap: 3.6rem;
+}
+.header-link:link,
+.header-link:visited {
+  text-decoration: none;
+  color: #5e6369;
+  display: block;
+  transition: all 0.3s;
+}
+.header-link:hover,
+.header-link:active {
+  transform: scale(1.4);
+  color: #000;
+}
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.brake-block {
+  background-color: #000;
+  height: 2.4rem;
+  width: 0.2rem;
+}
+
+  <!-- <header class="header">
+      <a href="#">
+        <img
+          src="https://ww1.freelogovectors.net/wp-content/uploads/2018/08/Vimeo-logo.png"
+          class="vimeo--logo"
+          alt="vimeo"
+        />
+      </a>
+      <nav class="main-nav--container">
+        <ul class="main-nav--links">
+          <li>
+            <a target="_blank" href="index.html" class="main-nav--link">Home</a>
+          </li>
+          <li>
+            <a target="_blank" href="html/archive.html" class="main-nav--link"
+              >Archive</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="category.html" class="main-nav--link"
+              >Category</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="html/contact.html" class="main-nav--link"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="html/pages.html" class="main-nav--link"
+              >Pages</a
+            >
+          </li>
+          <li>
+            <a href="#" class="main-nav--link">
+              <ion-icon
+                class="caret-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-links">
+        <li>
+          <a class="header-link" href="#"
+            ><ion-icon class="social-icon" name="search-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <div class="brake-block"></div>
+        </li>
+        <li>
+          <a class="header-link" target="_blank" href="https://www.facebook.com"
+            ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a class="header-link" target="_blank" href="https://twitter.com"
+            ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            class="header-link"
+            target="_blank"
+            href="https://www.instagram.com"
+            ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a class="header-link" target="_blank" href="https://www.skype.com"
+            ><ion-icon class="social-icon" name="logo-skype"></ion-icon
+          ></a>
+        </li>
+      </ul>
+    </header> -->

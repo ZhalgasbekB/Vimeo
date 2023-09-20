@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Merriweather", sans-serif;
+  overflow-x: hidden;
+}
+/* Header */
+/* //////////// */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #b8b9bd;
+}
+.vimeo--logo {
+  width: 17rem;
+  height: 9rem;
+  margin: 0 3.6rem;
+}
+.container {
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.main-nav--links {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+}
+.main-nav--links li:last-child {
+  margin-left: -4rem;
+  margin-top: 0.4rem;
+}
+
+.main-nav--link:visited,
+.main-nav--link:link {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #36393c;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.main-nav--link:active,
+.main-nav--link:hover {
+  color: #000;
+}
+.main-nav-link:visited::before,
+.main-nav--link:link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  transition: width 0.7s ease-in-out;
+  /* transform-origin: right; */
+  /* transform: scaleX(0); */
+  /* does not matter but you can use this attributes */
+}
+.main-nav--link:active::before,
+.main-nav--link:hover::before {
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
+  /* transform: scaleX(2); */
+}
+
+.caret-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.brake-block {
+  background-color: #000;
+  height: 2.4rem;
+  width: 0.2rem;
+}
+.social-links {
+  list-style: none;
+  margin-left: 3.6rem;
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  gap: 3.6rem;
+}
+.img--general {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+.img--general img {
+  overflow: hidden;
+  width: 100%;
+  height: 32rem;
+  transition: all 0.3s;
+}
+.img--general img:hover {
+  transform: scale(1.1);
+}
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.header-link:link,
+.header-link:visited {
+  text-decoration: none;
+  color: #5e6369;
+  display: block;
+  transition: all 0.3s;
+}
+.header-link:hover,
+.header-link:active {
+  transform: scale(1.4);
+  color: #000;
+}
