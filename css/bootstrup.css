@@ -12,9 +12,10 @@ body {
   width: 450px;
   margin-left: 5rem;
 }
-.h3--all {
+/* .h3 {
   color: #808589;
-}
+  font-size: 3.4rem;
+} */
 .bootstrup-section {
   display: flex;
   height: 100vh;
@@ -39,8 +40,10 @@ body {
 .icon {
   opacity: 0;
   position: absolute;
-  top: 5px;
-  right: 510px;
+  top: 1.6rem;
+  right: 240px;
+  color: #808589;
+  font-size: 2.4rem;
 }
 .text-container {
   position: relative;
@@ -55,7 +58,7 @@ body {
 }
 .short--text {
   font-weight: 100;
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   color: #f8f9fa;
 }
 
@@ -84,6 +87,9 @@ body {
   display: block;
   /* opacity: 1; */
 }
+
+/* ///// Header for github */
+/* /////////////////////// */
 
 .header {
   display: flex;
