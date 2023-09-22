@@ -169,3 +169,25 @@ After school, Kamal took the girls to the old house. It was very old and very di
         </li>
       </ul>
     </header> -->
+
+.main-nav-link:visited::before,
+.main-nav--link:link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  transition: width 0.7s ease-in-out;
+  /* transform-origin: right; */
+  /* transform: scaleX(0); */
+  /* does not matter but you can use this attributes */
+}
+.main-nav--link:active::before,
+.main-nav--link:hover::before {
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
+  /* transform: scaleX(2); */
+}
